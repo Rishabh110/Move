@@ -1,0 +1,69 @@
+<!--Bootstrap In-class Exercise
+	Author: Rishabh Tiwari
+	Date: 07/02/2019
+	Filename: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Move Sports</title>
+	<meta charset="UTF-8"/>
+
+	<!-- Reset Stylesheet I got from internet -->
+	<link rel="stylesheet" type="text/css" href="reset.css">
+
+	<!-- Local Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- Hero Img -->
+	<div class="hero">
+		<div id="heroImg">
+			<h1>Move Sports</h1>
+			<h3>Take Fitness to the Next Level</h3>
+			<!--<img src="hero.jpg"/>-->
+		</div>
+		<div class="heroBtn">
+			<a class="button" href="#">Start now</a>
+		</div>
+	</div>
+
+	<!-- Content After Hero Image, Containing 3 images side by side -->
+	<div class="content">
+		<div class="contImg1">
+			<h2>Move</h2>
+			<img src="content1.jpg">
+		</div>
+		<div class="contImg2" >
+			<h2>Rest</h2>
+			<img src="content2.jpg">
+		</div>
+		<div class="contImg3">
+			<h2>Recover</h2>
+			<img src="content3.jpg">
+		</div>
+	</div>
+
+	<!-- Finishing hook with CTA button --><!-- This is where i had the last problem. I could not position the button correctly unless I used absolute and moved it directly with left, and/or top, which doesn't make the page dynamic or flexible. So I just made it FlexBox as well. Lol. -->
+	<div class="finisher">
+		<h2>Stop Scrolling, Start Moving</h2>
+		<!-- CTA Button -->
+	</div>
+	<div class="finisherBtn">
+		<a class="button" href="#">Get Moving</a>
+	</div>
+
+	<!-- Footer -->
+	<div class="footer">
+		<p>&#0169;Move Sport and Fitness</p>
+	</div>
+	
+</body>
+</html>
+
+<!-- This project was very fun and I think there is a lot of unnecessary code remaining in here as I was trying to move the objects around. I eventually realized that FlexBoxes are an amazing tool and it made this project a ton easier. At first I only used it on the images, because that was a way we learned to align them side to side, but it appears that FlexBoxes just make stuff work for some reason.*/

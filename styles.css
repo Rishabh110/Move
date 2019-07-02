@@ -1,0 +1,124 @@
+/* 	Bootstrap in-class exercise 
+	Author: Rishabh Tiwari
+	Date: 07/02/2019
+	Filename: styles.css */
+@charset 'UTF-8'
+
+html { /* For some reason when I remove this my whole page shifts */
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif; /*Why doesn't this work*/
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 	
+	background-color: black;
+}
+
+.hero  {
+	background-image: url("hero.jpg");
+	max-width: 100%;
+	height: 390px;
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align: center;
+	background-size: cover;
+	font-size: 1.5em;
+	color: white;
+}
+
+.button {
+	text-decoration: none;
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+.heroBtn {
+	padding-top: 60px;
+}
+
+
+#heroImg {
+	font-size: 2em;
+	line-height: 2em;
+	color: white;
+	font-weight: bold;
+}
+
+#heroImg h1 {
+	font-size: 2em;
+}
+
+.content {
+	display: flex;
+	position: relative;
+	text-align: center;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+
+}
+
+.content img {
+	width: 510px;	
+	max-width: 100%; 
+   	max-height: 300px;
+   	height: 300px;
+   	margin: 0;
+   	padding: 0;
+}
+
+.content h2 {
+	position: absolute;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	font-size: 3em;
+}
+
+.finisher {
+	background-color: black;
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	height: 400px;
+	color: white;
+	justify-content: center;
+}
+
+.finisher h2 {
+	margin: auto;
+	font-size: 2em;
+}
+
+.finisherBtn {
+	display: flex;
+	background-color: black; /*	I didn't want to do it the brute force way with top and left, 
+								so I tried to make the button a flexbox and made it's background 
+								black so it blends in with the previous segment. */
+	/*top: 1000px;
+	left: 690px;*/
+}
+
+.footer, .finisherBtn {
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align: center;
+}
+
+@media (max-width: 550px) { /*	I'm aware that when the screen gets smaller, the pictures get too small. 
+								I'm not sure how to get it to wrap evenly with the pictures. Maybe the pictures aren't the proper size.*/
+	.content {
+		flex-flow: wrap;
+	}
+}
+
+@media (min-width: 1528px) {
+	.content {
+		justify-content: center;
+	}
+}
